@@ -1,5 +1,5 @@
 FROM alpine:latest
 
-RUN apk add --update curl git  && rm -rf /var/cache/apk/*
+RUN apk add --no-cache curl git 
 
 ENTRYPOINT ["/bin/sh", "-c", "/bin/sh"]
